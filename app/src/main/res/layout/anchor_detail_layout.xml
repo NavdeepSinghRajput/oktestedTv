@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewAnchor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10dp"
+    android:elevation="@dimen/cardelevation_5dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_5dp"
+    app:cardCornerRadius="@dimen/cardCornerRadius_5dp">
+
+    <LinearLayout
+        android:id="@+id/selectorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardblack"
+        android:orientation="vertical">
+
+        <com.tv.oktested.utils.ScaleImageView
+            android:scaleType="fitXY"
+            android:id="@+id/anchorView"
+            android:layout_width="@dimen/cardImageAnchorShow"
+            android:layout_height="@dimen/cardImageAnchorShow"
+            android:src="@drawable/ic_heart_white_24dp" />
+
+        <TextView
+            android:id="@+id/anchorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="2"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:text="asgdsdsds"
+            android:textColor="#E7E7E7"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

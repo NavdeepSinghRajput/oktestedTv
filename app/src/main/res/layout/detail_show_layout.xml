@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailShowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/editor_gradient"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailShowType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Tries"
+                android:textColor="@color/pink"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailShowTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Transforming into K Pop starTransforming into K Pop starTransforming into K Pop starTransforming into K Pop starTransforming into K Pop starTransforming into K Pop starTransforming into K Pop starTransforming into K Pop star"
+                android:textColor="@color/lb_tv_white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:padding="20dp"
+                    android:text="Follow"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/favIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:src="@drawable/heart"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.tv.oktested.utils.ScaleImageView
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/detailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/editor_pick_banner" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

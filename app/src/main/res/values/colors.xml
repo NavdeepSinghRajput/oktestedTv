@@ -1,0 +1,18 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="pink">#F81761</color>
+    <color name="cardblack">#222222</color>
+    <color name="yellow">#FFEC41</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gressih">#8D8C90</color>
+
+    <color name="lb_default_brand_color">#F81761</color>
+    <color name="detail_view_actionbar_background">#04549D</color>
+    <color name="detail_view_background">#0374BF</color>
+    <color name="detail_view_related_background">#000000</color>
+</resources>
